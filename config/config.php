@@ -3,7 +3,7 @@
   const WEBSITE_NAME = 'TechPocket';
 
   const DEFAULT_CONTROLLER = 'home';
-  const DEFAULT_ACTION = '';
+  const DEFAULT_ACTION = 'dashboard';
 
   const MEDIA_STORAGE_URL = 'app/storage/images/';
   const FILE_STORAGE_URL = 'app/storage/files/';

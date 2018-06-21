@@ -3,7 +3,7 @@
 /**
  *
  */
-class ClassName{
+class Controller{
 
   function __construct(){
     echo "Main controller";
