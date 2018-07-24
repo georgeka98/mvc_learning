@@ -1,0 +1,729 @@
+.profile-pic-wrapper{
+  width: 100%;
+}
+
+.profile-pic-wrapper img{
+  width: 100%;
+}
+
+/* .profile-pic-wrapper{
+  height: 200px;
+  width: 200px;
+} */
+
+.user-info-wrap{
+  width: 20%;
+}
+
+.user-info-wrap .user-key-info{
+  padding-right: 20px;
+}
+
+/* .user-actions-wrap .user-actions{
+  padding-right: 10px;
+} */
+
+.wrapper > div{
+  display: table-cell;
+  vertical-align: top;
+}
+
+.wrapper{
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0px;
+  display: table;
+}
+
+.key-info > div{
+  display: table;
+}
+
+.key-info > div > *{
+  display: table-cell;
+}
+
+.key-info > div > .icon-wrapper{
+  height: 25px;
+  width: 25px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.key-info .icon-wrapper > span{
+  height: 25px;
+  width: 25px;
+  display: inline-block;
+  /* vertical-align: middle; */
+  margin-right: 10px;
+  line-height: 25px;
+}
+
+.key-info .icon-wrapper .join-date-indicator{
+  background: url("http://192.168.64.2/mvclearn/storage/images/clock-icon.png");
+  background-size: 100% 100%;
+}
+
+.key-info .icon-wrapper .full-name-indicator{
+  background: url("http://192.168.64.2/mvclearn/storage/images/full-name-icon.png");
+  background-size: 100% 100%;
+}
+
+.key-info .icon-wrapper .location-indicator{
+  background: url("http://192.168.64.2/mvclearn/storage/images/location-icon.png");
+  background-size: 100% 100%;
+}
+
+.key-info .icon-wrapper .role-indicator{
+  background: url("http://192.168.64.2/mvclearn/storage/images/membership-icon.png");
+  background-size: 100% 100%;
+}
+
+.key-info .icon-wrapper .about-me-indicator{
+  background: url("http://192.168.64.2/mvclearn/storage/images/work-icon.png");
+  background-size: 100% 100%;
+}
+
+.key-info .icon-wrapper .dob-indicator{
+  background: url("http://192.168.64.2/mvclearn/storage/images/birthdate-icon.png");
+  background-size: 100% 100%;
+}
+
+.key-info .icon-wrapper .occupation-indicator{
+  background: url("http://192.168.64.2/mvclearn/storage/images/interests-icon.png");
+  background-size: 100% 100%;
+}
+
+.key-info .icon-wrapper .personal-website-indicator{
+  background: url("http://192.168.64.2/mvclearn/storage/images/website-icon.png");
+  background-size: 100% 100%;
+}
+
+.key-info .info-wrapper > *{
+  display: inline-block;
+}
+
+.key-info .info-wrapper .flag{
+  height: 24px;
+  vertical-align: middle;
+  /* border: 2px solid #dbdbdb;
+  border-radius: 5px; */
+  box-sizing: content-box;
+}
+
+.key-info .info-wrapper .flag .country-flag{
+  border: 2px solid #dbdbdb;
+  border-radius: 5px;
+}
+
+.key-info .info-wrapper img{
+  height: inherit;
+}
+
+.key-info > div .info-wrapper p, .key-info > div .info-wrapper a{
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+
+  margin-top:10px;
+  margin-bottom: 10px;
+}
+
+/*comments */
+
+.user-actions{
+
+}
+
+.user-actions > div{
+  display: block;
+}
+
+.comments-options {
+  background-color: #474647;
+  /* display: table; */
+  width: 100%;
+}
+
+.comments-options .comment-type, .activity-wrapper .order-by {
+  display: inline-block;
+}
+
+.comments-options #comments, .comments-options #newest {
+  color: #474647;
+  background-color: #ffffff;
+}
+
+/* a:active {
+  color: #474647;
+  background-color: #ffffff;
+} */
+
+.comments-options a {
+  display: inline-block;
+  color: #ffffff;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.comments-options .order-by {
+  float: right;
+}
+.comments-options .comment-type, .activity-wrapper .order-by {
+  display: inline-block;
+}
+
+.comments-options p {
+  display: inline-block;
+  padding: 0px;
+  margin: 0px;
+  color: white;
+}
+
+#order-newest {
+  color: #474647;
+  background-color: #ffffff;
+}
+.comments-options a {
+  display: inline-block;
+  color: #ffffff;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/************* COMMENT POSTS ************/
+
+/*********** COMMENTS TESSINGS **********/
+
+.activity-wrapper{
+	display: table-cell;
+	padding-left: 10px;
+	padding-right: 10px;
+	vertical-align:top;
+	width: auto;
+}
+
+.activity .post .comment .user-wrote *{
+	display: inline-block;
+}
+
+.comments .post{
+	background-color: white;
+}
+
+.comments .user-comments{
+	clear: both;
+}
+
+.comments a{
+	display: block;
+}
+
+.comments .post{
+	border-top: 1px solid #ededed;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+	display: table;
+	width: 100%;
+}
+
+/*************** COMMENT POST ****************/
+
+.comments #post-submit-JS{
+	display: none;
+}
+
+.comments #post-submit-nonJS{
+	display: block;
+}
+
+.comments .no-replies, .comments .no-comments{
+	background-color: #ffffff;
+	margin: 0px;
+	padding: 10px;
+}
+
+/*************** comment wrappers ****************/
+
+.comments .comm-rapper{
+	display: table-cell;
+	width: 100%;
+	min-height: 110px;
+	padding: 10px;
+	position: relative;
+}
+
+.comments .reply .comm-rapper{
+	padding: 10px 0px;
+}
+
+.comments .comm-rapper .opt-wrapper{
+	display: block;
+	min-height: inherit;
+	width: 100%;
+	margin-bottom: 10px;
+	height: 100%;
+}
+
+.comments .comm-rapper .opt-wrapper .comment{
+	min-height: 75px;
+	margin-bottom: 10px;
+}
+
+.comments .comm-rapper .opt-wrapper .comment p{
+	margin: 0px;
+	padding: 0px;
+}
+
+/*************** VOTES and REPORT *************/
+
+/************* COMMENT SECTION ************/
+
+.comments{
+	width: 100%;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	background-color: #ffffff;
+	overflow: hidden;
+}
+
+.comments .post a{
+	color: #006184;
+}
+
+.comments form{
+	margin-bottom: 0px;
+}
+
+.char-count-submit-wrapper{
+	display: block;
+}
+
+.comments .comment-cont{
+	display: table;
+	margin: auto;
+	width: 70%;
+	clear: both;
+}
+
+.comments textarea{
+	width: 100%;
+	height: 120px;
+	resize: none;
+	font-size: 15px;
+	padding: 10px;
+}
+
+.comments .comment-cont .char-count-wrapper{
+	display: inline-block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.comments .comment-cont .char-count-wrapper p{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	min-height: 20px;
+}
+
+.comments .comment-cont .btn-cont{
+	display: inline-block;
+	margin-top: 10px;
+	float: right;
+}
+
+.comments .comment-cont .btn-cont #post-submit-JS, .comments .comment-cont .btn-cont #post-submit-nonJS, .comments .comment-cont .btn-cont .reply-submit-JS, .comments .comment-cont .btn-cont .reply-submit-nonJS{
+	border-radius: none;
+	border: 1px solid #57b1ff;
+	margin-bottom: 10px;
+	background-color: #57b1ff;
+	padding: 10px 20px;
+	font-size: 15px;
+	text-transform: uppercase;
+	color: #ffffff;
+	cursor: pointer;
+}
+
+.comments .post, .comments .post .reply{
+	border-top: 1px solid #ededed;
+	width: 100%;
+}
+
+.comments .post .replies{
+	width: calc(100% - 70px);
+	margin-left: 70px;
+}
+
+.comments .comment-post-head p{
+	margin: 0px;
+}
+
+.comments .comment-post-head > div{
+	display: table-cell;
+}
+
+/*************** USER PROFILE PICTURE ***************/
+
+.comments .comment-post-head .user-profile-picture img{
+	height: 60px;
+	vertical-align: middle;
+	padding-right: 10px;
+}
+
+
+/*************** COMMENT POST INFO ****************/
+
+.comments .comment-post-head .comment-post-info{
+	width: 100%;
+}
+
+.comments .comment-post-head .comment-post-info > div{
+	display: inline-block;
+}
+
+.comments .comment-post-head .comment-post-info .comment-user-info{
+	vertical-align: middle;
+}
+
+.comments .comment-post-head .comment-post-info .comment-edit-delete{
+	float: right;
+	vertical-align: middle;
+}
+
+.comments .comment-post-head .comment-post-info .comment-user-info .comment-author{
+	margin-bottom: 5px;
+}
+
+.comments .comment-post-head .comment-post-info .comment-user-info .comment-author > *{
+	display: inline-block;
+}
+
+.comments .comment-post-head .comment-post-info .comment-user-info .comment-author .reply-img{
+	height: 15px;
+	width: 20px;
+	margin-left: 5px;
+	margin-right: 5px;
+	background: url("http://192.168.64.2/mvclearn/storage/images/reply-icon.png") no-repeat center;
+	background-size: 100% 100%;
+}
+
+.comments .comment-post-head .comment-post-info .comment-user-info .comment-author .reply-img img{
+	height: 15px;
+	display: none;
+}
+
+.edit-comment, .save-changes, .delete-comment, .date{
+	color: rgb(118, 118, 118);
+	font-weight: 400;
+	font-size: 12px;
+}
+
+.edit-comment, .save-changes, .delete-comment{
+	cursor: pointer;
+}
+
+.edit-comment:hover, .save-changes:hover, .delete-comment:hover{
+	text-decoration: underline;
+}
+
+.posted-date-img{
+	background: url("http://192.168.64.2/mvclearn/storage/images/clock-icon.png") no-repeat center;
+	background-size: 100% 100%;
+	height: 12px;
+	width: 12px;
+	display: inline-block;
+	margin-right: 5px;
+}
+
+.wrote-img{
+	background: url("http://192.168.64.2/mvclearn/storage/images/comment-wrote-icon.png") no-repeat center;
+	background-size: 100% 100%;
+	height: 15px;
+	width: 15px;
+	display: inline-block;
+	margin-right: 5px;
+}
+
+/*************** COMMENT POST SUBMIT BUTTON ****************/
+
+.comments #post-submit-JS{
+	display: none;
+}
+
+.comments #post-submit-nonJS{
+	display: block;
+}
+
+/*************** comment wrappers ****************/
+
+.comments .comm-rapper{
+	width: 100%;
+	padding-top: 10px;
+	position: relative;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+ 	-webkit-box-sizing: border-box;
+}
+
+.comments .user-comments .comm-rapper .opt-wrapper{
+	display: block;
+	min-height: inherit;
+	width: 100%;
+	padding-bottom: 10px;
+}
+
+.comments .user-comments .comm-rapper .opt-wrapper .hidden{
+	margin-top: 10px;
+}
+
+.comments .user-comments{
+	display: block;
+}
+
+/*************** COMMENT BODY ****************/
+
+.comments .comment-post-body{
+	min-height: 30px;
+	padding: 10px 0px;
+}
+
+.comments .comment-post-body p{
+	margin: 0px;
+	padding: 0px;
+}
+
+/*************** VOTES and REPORT *************/
+
+.comments .user-comments .options{
+	width: 100%;
+	height: 28px;
+}
+
+.comments .user-comments .options .date{
+	margin-right: 20px;
+}
+
+.comments .user-comments .options .replyBtn, .comments .user-comments .options .nonJS{
+	display: table-cell;
+	border-radius: none;
+	border: none;
+	background-color: #57b1ff;
+	padding: 6px 10px;
+	text-transform: uppercase;
+	color: #ffffff;
+	cursor: pointer;
+	font-weight: 100;
+	font-size: 13px;
+}
+
+.comments .user-comments .vote-report{
+	display: table;
+	float: right;
+	box-sizing: border-box;
+}
+
+.comments .user-comments .vote-report span{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.comments .user-comments .vote-report span button, .comments .user-comments .vote-report span p{
+	padding: 0px;
+	margin: 0px;
+	display: inline-block;
+	vertical-align: bottom;
+}
+
+.comments .user-comments .vote-report span button{
+	margin-right: 10px;
+	border: none;
+	background-color: white;
+	cursor: pointer;
+}
+
+.comments .user-comments .vote-report img{
+	height: 20px;
+	margin: 0px;
+}
+
+.comments .user-comments .options .vote-up{
+	border-right: 2px solid #d6d6d6;
+}
+
+.comments .user-comments .options .vote-up, .comments .user-comments .options .vote-down{
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+/************ ERROR MESSAGE **************/
+
+.comments #error-message{
+	color: red;
+}
+
+/************** HIDDEN POST TEXTBOX ********/
+
+.comments .hidden{
+	display: none;
+}
+
+.reply-nonJS{
+	display: none;
+}
+
+/**************** REPORT ******************/
+
+#report-comment-window{
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	display: none;
+	z-index: 9999;
+	background-color: rgba(0, 0, 0, 0.54);
+}
+
+#report-comment-window .report-wrapper{
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+
+#report-comment-window .report-box, #report-comment-window .report-box-message{
+	background-color: white;
+	width: 450px;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	margin: auto;
+}
+
+#report-comment-window .report-descripction, #report-comment-window .report-title{
+	padding: 10px;
+	background-color: #d6d6d6;
+}
+
+#report-comment-window .all-report-options{
+	padding: 10px;
+}
+
+#report-comment-window .cation-message{
+	padding: 10px;
+}
+
+#report-comment-window .report-box p{
+	margin: 0px;
+	padding: 0px;
+}
+
+#report-comment-window .report-box #report-something-else-textbox{
+	width: 100%;
+	height: 70px;
+	resize: none;
+}
+
+#report-comment-window .report-box-message .report-message-wrapper{
+	padding: 10px;
+}
+
+#report-comment-window .report-box-message p{
+	margin: 0px;
+	padding: 0px;
+}
+
+.comments .options{
+	width: 100%;
+	height: 28px;
+}
+
+.comments .options .date{
+	margin-right: 20px;
+}
+
+.comments .vote-report{
+	display: table;
+	float: right;
+	box-sizing: border-box;
+}
+
+.comments .vote-report span{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.comments .vote-report span button, .comments .vote-report span p{
+	padding: 0px;
+	margin: 0px;
+	display: inline-block;
+	vertical-align: bottom;
+}
+
+.comments .vote-report span button{
+	margin-right: 10px;
+	border: none;
+	background-color: white;
+	cursor: pointer;
+}
+
+.comments .vote-report img{
+	height: 20px;
+	margin: 0px;
+}
+
+.comments .options .vote-up{
+	border-right: 2px solid #d6d6d6;
+}
+
+.comments .options .vote-up, .comments .options .vote-down{
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+@media only screen and (max-width: 979px){
+  .wrapper{
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .wrapper .user-info-wrap{
+    display: block;
+    width: 100%;
+  }
+
+  .wrapper .user-info-wrap .user-key-info{
+    padding: 0px;
+  }
+
+  .wrapper .user-actions-wrap{
+    display: block;
+  }
+
+  .wrapper .profile-pic-wrapper{
+    margin: auto;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .wrapper .profile-pic-wrapper > img{
+    width: 200px;
+    border-radius: 200px;
+  }
+}
+
+@media only screen and (max-width: 480px){
+  .comments-options .order-by{
+    float: none;
+  }
+}

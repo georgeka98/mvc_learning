@@ -1,0 +1,428 @@
+body{
+
+}
+
+.login-form .title{
+  font-size: 28px;
+}
+
+.login-form{
+  text-align: center;
+  width: 600px;
+  margin: auto;
+}
+
+.class-form-wrapper{
+  display: table-row;
+}
+
+.login-form .social_login > *, .login-form .login > *{
+  display: block;
+  width: 260px;
+}
+
+.login-form .error_msg{
+  color: red;
+  font-size: 18px;
+  position: relative;
+  vertical-align: middle;
+  padding: 0px 20px;
+  margin: 0px 0px 20px 0px;
+}
+
+.login-form .error_msg:before{
+  content: " ";
+  background: url("http://192.168.64.2/mvclearn/storage/images/exclamation-mark-icon.png");
+  background-size: 100% 100%;
+  height: 20px;
+  width: 20px;
+  margin-left: -30px;
+  top: 0;
+  position: absolute;
+}
+
+.login-form .table-wrapper{
+  display: block;
+  padding: 20px 0px;
+}
+
+.login-form .class-form-wrapper > div{
+  display: table-cell;
+}
+
+.login-form .class-form-wrapper .fields{
+  width: 260px;
+}
+
+.login-form .class-form-wrapper .submit{
+  display: block;
+}
+
+.login-form .class-form-wrapper .seperator{
+  position: relative;
+  width: 80px;
+}
+
+.login-form .class-form-wrapper .seperator .line{
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  display: inline-block;
+  width: 2px;
+  height: 100%;
+  background-color: #9A998C;
+}
+
+.login-form .class-form-wrapper .seperator p{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin: 0px;
+  padding: 0px;
+  background-color: #fff;
+}
+
+/* sopcial media fields */
+
+.login-form .social_login > a{
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -ms-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  padding: 10px 10px;
+  margin-bottom: 20px;
+  color: #fff;
+  text-align: left;
+  cursor: pointer;
+}
+
+.login-form .social_login > a:last-child{
+  margin: 0px;
+}
+
+.login-form .social_login a span{
+  display: inline-block;
+  height: 20px;
+  width: 30px;
+  vertical-align: bottom;
+}
+
+.login-form .social_login .facebook_login{
+  background-color: #4166b2;
+}
+
+.login-form .social_login .twitter_login{
+  background-color: #1DA1F2;
+}
+
+.login-form .social_login .google_login{
+  background-color: #DB4437;
+}
+
+.login-form .social_login .facebook-icon{
+  background: url("http://192.168.64.2/mvclearn/storage/images/facebook-logo-square.jpg");
+  background-size: 100% 100%;
+}
+
+.login-form .social_login .twitter-icon{
+  background: url("http://192.168.64.2/mvclearn/storage/images/twitter-logo-square.jpg");
+  background-size: 100% 100%;
+}
+
+.login-form .social_login .google-icon{
+  background: url("http://192.168.64.2/mvclearn/storage/images/google-plus-logo-square.png");
+  background-size: 100% 100%;
+}
+
+.login-form .social_login > a:hover{
+  text-decoration: none;
+}
+
+.login-form .social_login .facebook_login:hover{
+  background-color: #224870;
+}
+
+.login-form .social_login .twitter_login:hover{
+  background-color: #006E90;
+}
+
+.login-form .social_login .google_login:hover{
+  background-color: #A31621;
+}
+
+/*normal sign up form fields */
+
+.login-form .class-form-wrapper input{
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  width: 100%;
+  background: #fff;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-weight: 100;
+}
+
+.login-form .class-form-wrapper input:focus{
+  box-shadow: 0 0 5px #0984FF;
+  padding: 10px;
+  border: 1px solid #0984FF;
+}
+
+.login-form .class-form-wrapper input:last-child{
+  margin-bottom: 0px;
+}
+
+.login-form input[type="submit"]{
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 10px 30px;
+  background: #0984FF;
+  border-bottom: 2px solid #016FB9;
+  border-top-style: none;
+  border-right-style: none;
+  border-left-style: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.login-form input[type="submit"]:hover{
+  background: #fb3f3f;
+  border-bottom: 2px solid #885053;
+}
+
+.login-form .input{
+  display: block;
+  text-align: left;
+  padding: 10px 0px;
+  position: relative;
+}
+
+.input .checkbox{
+  display: inline-block;
+  width: auto;
+  vertical-align: middle;
+  margin: 0px;
+  border-radius: 0px;
+  display: none;
+}
+
+.input label{
+  width: 0px;
+  padding: 0px;
+  position: relative;
+  cursor: pointer;
+}
+
+.input label > span {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  border: 1px solid #b3b3b3;
+  vertical-align: bottom;
+  background-color: #fb3f3f;
+}
+
+/**
+ * Create the hover event of the tick
+ */
+.checkbox:checked + label > span {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  background-color: #0984ff;
+  animation: bounce 250ms;
+}
+
+.checkbox:not(:checked) + label > span {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  background-color: #fb3f3f;
+  animation: bounce_opossite 250ms;
+}
+
+/**
+ * Create the checkbox state for the tick
+ */
+.checkbox:checked + label > span::before{
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 4px;
+
+  border-right: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  transform: rotate(45deg);
+  transform-origin: 0% 100%;
+  animation: checked_box 125ms 250ms forwards;
+}
+
+@keyframes checked_box {
+  0%{
+    width: 0px;
+    height: 0px;
+    border-color: #fff;
+    transform: translate(0,0) rotate(45deg);
+  }
+
+  33%{
+    width: 0px;
+    height: 4px;
+    border-color: #fff;
+    transform: translate(0,0) rotate(45deg);
+  }
+
+  100%{
+    width: 4px;
+    height: 8px;
+    border-color: #fff;
+    transform: translate(0,-7px) rotate(45deg);
+  }
+}
+
+.checkbox:not(:checked) + label > span::before{
+  background-color: #0984ff;
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 3px;
+  width: 4px;
+  height: 8px;
+
+  border-right: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  transform: translate(0,-6px) rotate(45deg);
+  transform-origin: 0% 100%;
+  animation: unchecked_box 125ms 250ms forwards;
+}
+
+@keyframes unchecked_box {
+  0%{
+    width: 4px;
+    height: 8px;
+    border-color: #fff;
+    transform: translate(0,-7px) rotate(45deg);
+  }
+
+  33%{
+    width: 0px;
+    height: 4px;
+    border-color: #fff;
+    transform: translate(0,0) rotate(45deg);
+  }
+
+  100%{
+    width: 0px;
+    height: 0px;
+    border-color: #fff;
+    transform: translate(0,0) rotate(45deg);
+    transform: scale(0);
+  }
+}
+
+@keyframes bounce {
+  0%{
+    transform: scale(1);
+  }
+
+  33%{
+    transform: scale(.70);
+  }
+
+  100%{
+    transform: scale(1);
+  }
+}
+
+@keyframes bounce_opossite {
+  0%{
+    transform: scale(1);
+  }
+
+  33%{
+    transform: scale(.70);
+  }
+
+  100%{
+    transform: scale(1);
+  }
+}
+
+.login_wrapper > p{
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 739px){
+  .class-form-wrapper{
+    display: block;
+    text-align: center;
+  }
+
+  .input{
+    text-align: center;
+    /* margin: auto;
+    width: 150px!important; */
+  }
+
+  .login-form .class-form-wrapper > div{
+    display: block;
+    margin: auto;
+    width: 100%!important;
+  }
+
+  .login-form{
+    width: 100%!important;
+    max-width: 600px;
+    padding: 0px 10px;
+  }
+
+  .login-form .class-form-wrapper input[type="text"],
+  .login-form .class-form-wrapper input[type="password"],
+  .login-form .class-form-wrapper input[type="email"],
+  .login-form .class-form-wrapper a{
+    width: 100%;
+  }
+
+  .login-form .class-form-wrapper .seperator{
+    position: relative;
+    height: 80px;
+    width: 100%;
+  }
+
+  .login-form .class-form-wrapper .seperator .line{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    display: inline-block;
+    height: 2px;
+    width: 100%;
+    background-color: #9A998C;
+  }
+
+  .login-form .class-form-wrapper .seperator p{
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin: 0px;
+    padding: 0px;
+    background-color: #fff;
+  }
+}

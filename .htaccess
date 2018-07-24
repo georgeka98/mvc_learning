@@ -1,4 +1,4 @@
-RewriteEngine on
+RewriteEngine On
 
 Options -Indexes
 
@@ -6,4 +6,10 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-l
 
-RewriteRule ^(.+)$ index.php?url=$1 [NS,L]
+RewriteRule ^(.+)$ index.php?url=$1 [NS,L,QSA]
+
+#RewriteRule ^$ blog/
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule ^(.*)$ sub/$1
+RewriteRule ^article/?$ blog/article/ [NC,L,QSA]

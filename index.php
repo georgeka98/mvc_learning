@@ -1,8 +1,14 @@
 <?php
 
-  require_once 'config/config.php';
-  require_once 'app/bootstrap.php';
+  include 'config/config.php';
+  include 'app/view.php';
+  include 'app/bootstrap.php';
+  include 'app/model.php';
+
+  //Library
+  include 'app/database.php';
+  include 'app/session.php';
 
   $app = new Bootstrap;
-
+  // echo phpinfo();
 ?>

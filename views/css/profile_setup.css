@@ -1,0 +1,123 @@
+/************ STEP BY STEP BAR ***********/
+
+.progressbar-wrap {
+  height: 60px;
+}
+.progressbar {
+  margin: 0;
+  padding: 0;
+  counter-reset: step;
+  display: block;
+}
+.progressbar li {
+  list-style-type: none;
+  width: 25%;
+  float: left;
+  font-size: 12px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  color: #7d7d7d;
+}
+.progressbar li:before {
+  width: 30px;
+  height: 30px;
+  content: counter(step);
+  counter-increment: step;
+  line-height: 30px;
+  border: 2px solid #7d7d7d;
+  display: block;
+  text-align: center;
+  margin: 0 auto 10px auto;
+  border-radius: 50%;
+  background-color: white;
+}
+.progressbar li:after {
+  width: 100%;
+  height: 2px;
+  content: '';
+  position: absolute;
+  background-color: #7d7d7d;
+  top: 15px;
+  left: -50%;
+  z-index: -1;
+}
+.progressbar li:first-child:after {
+  content: none;
+}
+.progressbar li.active {
+  color: green;
+}
+.progressbar li.active:before {
+  border-color: #55b776;
+}
+.progressbar li.active + li:after {
+  background-color: #55b776;
+}
+
+
+/************ THIS PART ISNLY APPLIES WHEN THE USER HAS FINISHED SETTING UP HIS PROFILE *********/
+
+.category{
+	background-color: #006184;
+}
+
+.category{
+	display: block;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.category a{
+	display: inline-block;
+	color: #ffffff;
+	padding: 10px;
+	cursor: pointer;
+	width: 33.333%;
+	text-align: center;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    vertical-align: middle;
+}
+
+.category .selected{
+	color: #006184;
+	background-color: #ffffff;
+}
+
+.category p{
+	display: inline-block;
+	padding: 0px;
+	margin: 0px;
+	color: white;
+}
+
+.edit-details{
+	padding: 10px;
+	background-color: #ffffff;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+
+/********* STEP 1 SETUP PROFILE **********/
+
+#progressBar{
+	width: 300px;
+}
+
+#img-preview{
+	overflow: hidden;
+	position: relative;
+	border: 1px solid gray;
+	cursor: move;
+}
+
+/********* STEP 2 SETUP PROFILE **********/
+
+.resend-validation-email{
+	cursor: pointer;
+	text-decoration: underline;
+	color: #57b1ff;
+}

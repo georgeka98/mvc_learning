@@ -1,37 +1,52 @@
-<?php
 
-  session_start();
-  include_once "config/config.php";
-
-?>
-
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><?=$_GET['controller']?></title>
-    <link href="css/main.css" rel="stylesheet" type="text/css"/>
-  </head>
-  <body>
-    <header>
-      <div class="top">
-        <span class="social">
-          <a href="https://www.facebook.com/techpocketofficial"><img src="<?=MEDIA_STORAGE_URL?>fb.png" alt="FB" class="facebook"></a>
-          <a href="https://twitter.com/techpocket1"><img src="<?=MEDIA_STORAGE_URL?>twitter.png" alt="T" class="twitter"></a>
-          <a href="https://plus.google.com/+techpocketvideo"><img src="<?=MEDIA_STORAGE_URL?>g+.png" alt="G" class="google_plus"></a>
-        </span>
-        <span class="join">
-          <?php if (!isset($_SESSION['auth']) ?>
-          <a href="views/login" class="login">Log in</a>
-          <a href="views/signup" class="signup">Sign up</a>
-          <?php   if ($_SESSION['auth']['subscribe'] == 0) ?>
-          <a href="#" class="subscribe">Subscribe</a>
-          <?php else ?>
-          <a href="views/account" class="subscribe">Subscribe</a>
-        </span>
-      </div>
-      <div class="header">
-
-      </div>
+      <section class="header">
+        <div class="cont cont-header">
+          <div class="logo-event-sub">
+            <div class="logo-wrapper">
+              <div class="logo"></div>
+            </div>
+            <div class="header-row-group">
+              <div class="header-row">
+                <div class="header-event">asdjklfhak fhdj djfhdjfj djfhdsj jfhdas jlajfh asdlkjhdfjkasd hjkdsj fkdasjlkfdashfd sfjahj hkjshfkjl asjkf hasdlkj fhdsjklf askjf adjkf adslk djhak fhdsjk hajk llkjkjlf aljkhjkhfljkh lkfjh aljkfh sdflkjsad lf lkda fjkdasdslkahf aldksj dfhaskjl f dskf hdasjklfhasdjk hadskfdasjk fasdldfh sdakjdjfk hasdjklfdsjkf hdsjkl fsdj fajk hasdlk fhjkl dskljhf sjkldhsl sdl ffsd hsdjklfsdfa kjksa hklfh</div>
+                <div class="subscribe-form">
+                  <form action="views/includes/subscribe/index.php" class="sub-form">
+                    <div class="sub-btn-wrapper">
+                      <input type="submit" class="sub-btn" name="submit">
+                    </div>
+                    <div class="subscribe-field-wrapper">
+                      <input type="email" placeholder="Iwantto@subscribe.com" pattern="[^ @]*@[^ @]*" name="subscribe" class="subscribe-field">
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <nav class="navbar">
+            <div class="navbar-wrapper" id="navbar-wrap-toggle">
+              <a href="<?= BASE_DIR?>home" class="home">Home</a>
+              <a href="<?= BASE_DIR?>about" class="about">About</a>
+              <a href="<?= BASE_DIR?>forum" class="forum">Forum</a>
+              <a href="<?= BASE_DIR?>blog" class="blog">Blog</a>
+              <a href="<?= BASE_DIR?>youtubevideos" class="videos">Videos</a>
+              <a href="<?= BASE_DIR?>jobs" class="jobs">Jobs</a>
+              <a href="<?= BASE_DIR?>support/donate" class="donate">Donate</a>
+              <a href="<?= BASE_DIR?>more" class="more">More</a>
+              <div class="search-container">
+                <form action="/action_page.php">
+                  <div class="search-form-wrapper">
+                    <span class="search-input-wrapper">
+                      <input type="text" placeholder="Search.." name="search">
+                    </span>
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="nav-mobile-btn-wrapper">
+              <button class="mobile-nav-btn" id="mobile-nav-btn"><i class="fas fa-bars"></i></button>
+            </div>
+          </nav>
+        </div>
+      </section>
     </header>
-  </body>
-</html>
+    <div class="cont container">
