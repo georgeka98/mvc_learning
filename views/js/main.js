@@ -1,11 +1,41 @@
+// window.fbAsyncInit = function() {
+//   FB.init({
+//     appId            : 'your-app-id',
+//     autoLogAppEvents : true,
+//     xfbml            : true,
+//     version          : 'v3.1'
+//   });
+// };
+//
+// (function(d, s, id){
+//    var js, fjs = d.getElementsByTagName(s)[0];
+//    if (d.getElementById(id)) {return;}
+//    js = d.createElement(s); js.id = id;
+//    js.src = "https://connect.facebook.net/en_US/sdk.js";
+//    fjs.parentNode.insertBefore(js, fjs);
+//  }(document, 'script', 'facebook-jssdk'));
+
+var fbButton = document.getElementById('fb-share-button');
+var url = window.location.href;
+
+fbButton.addEventListener('click', function() {
+    window.open('https://www.facebook.com/sharer/sharer.php?u=' + url,
+        'facebook-share-dialog',
+        'width=800,height=600'
+    );
+    return false;
+});
+
 function toggle_nav(){
-  var navbar = document.getElementById("navbar-wrap-toggle");
-  var navbar_display = window.getComputedStyle(navbar,null).getPropertyValue("display");
-  console.log(navbar_display);
-  if (navbar_display == "block")
-    document.getElementById("navbar-wrap-toggle").style.display = "none";
-  else
-    document.getElementById("navbar-wrap-toggle").style.display = "block";
+  if (document.getElementById("navbar-wrap-toggle") != null){
+    var navbar = document.getElementById("navbar-wrap-toggle");
+    var navbar_display = window.getComputedStyle(navbar,null).getPropertyValue("display");
+    console.log(navbar_display);
+    if (navbar_display == "block")
+      document.getElementById("navbar-wrap-toggle").style.display = "none";
+    else
+      document.getElementById("navbar-wrap-toggle").style.display = "block";
+  }
 }
 
 if (document.getElementById("mobile-nav-btn") != null){

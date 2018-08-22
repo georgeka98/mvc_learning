@@ -1,13 +1,15 @@
 *{
-  font-family: Sans-Serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 100;
   letter-spacing: 1px;
   outline: 0;
+  word-wrap: break-word;
 }
 
 a{
   text-decoration: none;
   text-decoration-skip: ink;
+  cursor: pointer;
 }
 
 a:hover{
@@ -41,9 +43,12 @@ input:-moz-placeholder { /* Firefox 18- */
   font-weight: 100;
 }
 
-html, body{
+html{
   height: 100%;
-  overflow: auto;
+}
+
+body{
+  overflow-x: hidden;
 }
 
 /* Global */
@@ -178,8 +183,8 @@ html, body{
 .logo{
   background: url("http://192.168.64.2/mvclearn/storage/images/TechPocket_label_logo.png");
   background-size: 100% 100%;
-  height: 80px;
-  width: 320px;
+  height: 5rem;
+  width: 20rem;
   float: left;
   margin-right: 20px;
 }
@@ -370,7 +375,7 @@ html, body{
 }
 
 .links .connect .logo{
-  height: 80px;
+  // height: 5rem;
   float: none;
   margin-top: 20px;
   margin-bottom: 10px;
@@ -460,7 +465,7 @@ html, body{
 
 @media only screen and (max-width: 360px){
   .subscribe-form{
-  width: 100%!important;
+    width: 100%!important;
   }
 }
 
@@ -547,7 +552,7 @@ html, body{
 
 @media only screen and (min-width: 360px) and (max-width: 739px){
   .subscribe-form{
-    width: 300px!important;
+    // width: 300px!important;
     max-width: 300px;
   }
 }
@@ -736,11 +741,6 @@ html, body{
 
   .navbar a {
     padding: 14px 20px;
-  }
-
-  .logo{
-    height: 60px!important;
-    width: 240px!important;;
   }
 
   .logo-event-sub{

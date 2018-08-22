@@ -12,4 +12,10 @@ RewriteRule ^(.+)$ index.php?url=$1 [NS,L,QSA]
 #RewriteCond %{REQUEST_FILENAME} !-f
 #RewriteCond %{REQUEST_FILENAME} !-d
 #RewriteRule ^(.*)$ sub/$1
-RewriteRule ^article/?$ blog/article/ [NC,L,QSA]
+#RewriteRule ^blog/article/?$ article/&%{QUERY_STRING} [NC,L,QSA]
+
+Header set Content-Security-Policy "default-src 'self' https://www.youtube.com/ https://fonts.googleapis.com https://cdnjs.cloudflare.com https://www.facebook.com http://assets.pinterest.com; \
+                                    script-src http://assets.pinterest.com https://connect.facebook.net 'self'; \
+                                    connect-src 'self'; \
+                                    img-src 'self'; \
+                                    style-src 'self' 'unsafe-inline' *;"

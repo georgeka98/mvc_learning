@@ -9,6 +9,7 @@
 
   const MEDIA_STORAGE_URL = 'storage/images/';
   const FILE_STORAGE_URL = 'storage/files/';
+  const BLOG_STORAGE = 'blog/';
 
   $page_url; //stores the url of the current page. It wont update the value if hte current page is login/signup or subscribe
 

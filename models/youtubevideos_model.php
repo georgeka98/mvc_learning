@@ -92,7 +92,7 @@ class Youtubevideos_model extends Model
         //video info
         $video_info = $this->youtube_analytics(array("id" => $item->id->videoId, "api_key" => $this->API_key));
 
-        $published_date = substr($item->snippet->publishedAt,0,10);
+        $published_date = $item->snippet->publishedAt;
         $day = substr($published_date,8,10);
         $month = substr($published_date,5,2);
         $year = substr($published_date,0,4);

@@ -79,13 +79,13 @@
           </div>
         </div>
         <?php endif;?>
-        <?php if ($this->data["membertype"]): ?>
+        <?php if ($this->data["role"]): ?>
         <div class="role-wrap">
           <div class="icon-wrapper">
             <span class="role-indicator"></span>
           </div>
           <div class="info-wrapper">
-            <p class="role"><?= $this->data["membertype"];?></p>
+            <p class="role"><?= $this->data["role"];?></p>
           </div>
         </div>
         <?php endif;?>

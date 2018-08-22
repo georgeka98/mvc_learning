@@ -1,5 +1,22 @@
 body{
+  height: 100vh;
+  border-collapse:collapse;
+  display : table;
+  width: 100%;
+}
 
+body > .container{
+  display: table-row;
+}
+
+.login-form{
+  padding: 20px;
+}
+
+footer {
+  display : table-row;
+  vertical-align : bottom;
+  height : 1px;
 }
 
 .login-form .title{

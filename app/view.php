@@ -14,9 +14,9 @@ class View{
     $this->js = $js;
   }
 
-  public function render($path, $render_footer = True, $render_header = True){
+  public function render($path, $render_footer, $render_header){
     include "views/includes/top.php";
-    if($render_footer == True){
+    if($render_header == True){
       include "views/includes/header.php";
     }
     else{

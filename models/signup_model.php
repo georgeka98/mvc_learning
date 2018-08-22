@@ -57,7 +57,7 @@ class Signup_model extends Model{
       $confirmed = "0";
 	    $date_joined = date("Y-m-d");
 
-      $user = $this->db->prepare("INSERT INTO users (date_joined, firstname, lastname, email, username, pwd, confirmCode, confirmed)
+      $user = $this->db->prepare("INSERT INTO users (date_joined, firstname, lastname, email, username, pwd, confirmCode, confirmed, profilesetupstatus)
                                             VALUES (:date_joined, :firstname, :lastname, :email, :username, :pwd, :confirmCode, :confirmed, :profilesetupstatus)");
       $user->execute(array(':date_joined' => $date_joined, ':firstname' => $first, ':lastname' => $last, ':email' => $email, ':username' => $uid, ':pwd' => $hash_pwd, ':confirmCode' => $confirmToken, ':confirmed' => $confirmed, ":profilesetupstatus" => "1"));
 
@@ -68,6 +68,15 @@ class Signup_model extends Model{
       $stmt->execute(array(':username' => $uid)); //binding the user input (in this case is the email)
       $user_info = $stmt->fetch(PDO::FETCH_ASSOC);
       //$userInfo = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM users WHERE username = '".$uid."'"));
+
+      //adding country flag name
+      $user_info["country-flag"] = $user_info['country']; //used to get the flag of the country which includes dashes "-"
+      $user_info["country"] = str_replace("-", " ", $user_info['country']);
+
+      //checking if profile pcture exists
+      if ($user_info["profile_icon"] == NULL){
+        $user_info["profile_icon"] = "default-profile-picture.jpg";
+      }
 
       Session::init();
       $_SESSION['loggedin'] = True;

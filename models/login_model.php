@@ -40,6 +40,15 @@
           include_once "remember-me.php";
           remember_me($remember_me, $email,$pwd);
 
+          //adding country flag name
+          $user_info["country-flag"] = $user_info['country']; //used to get the flag of the country which includes dashes "-"
+          $user_info["country"] = str_replace("-", " ", $user_info['country']);
+
+          //checking if profile pcture exists
+          if ($user_info["profile_icon"] == NULL){
+            $user_info["profile_icon"] = "default-profile-picture.jpg";
+          }
+
           Session::init();
           $_SESSION['loggedin'] = True;
           $_SESSION['auth'] = $user_info;

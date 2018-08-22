@@ -1,5 +1,7 @@
 <?php
 
+  date_default_timezone_set('Europe/London');
+
   include 'config/config.php';
   include 'app/view.php';
   include 'app/bootstrap.php';

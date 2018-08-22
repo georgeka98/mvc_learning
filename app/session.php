@@ -27,6 +27,10 @@ class Session{
     return False;
   }
 
+  public function user_all_data(){
+    return $_SESSION['auth'];
+  }
+
   public function update_all_data($data){
     $_SESSION['auth'] = $data;
   }

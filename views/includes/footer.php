@@ -44,9 +44,9 @@
     amet massa nec massa pellentesque rutrum non sit amet arcu.</div>
               <span class="title-follow-us-wrapper"><a href="<?= BASE_DIR?>#" class="title title-follow-us">Follow Us:</a></span>
               <div class="footer-social-icons-wrapper">
-                <a href="<?= BASE_DIR?>https://www.facebook.com/techpocketofficial" target="_blank"><img src="<?= BASE_DIR?>storage/images/facebook-logo.png" alt="FB" class="fb-logo"></a>
-                <a href="<?= BASE_DIR?>https://twitter.com/techpocket1" target="_blank"><img src="<?= BASE_DIR?>storage/images/twitter-logo.png" alt="Twitter" class="twitter-logo"></a>
-                <a href="<?= BASE_DIR?>https://plus.google.com/+techpocketvideo" target="_blank"><img src="<?= BASE_DIR?>storage/images/google-icon.png" alt="Google+" class="google-logo"></a>
+                <a href="https://www.facebook.com/techpocketofficial" target="_blank"><img src="<?= BASE_DIR?>storage/images/soc_med_icons/facebook.png" alt="FB" class="fb-logo"></a>
+                <a href="https://twitter.com/techpocket1" target="_blank"><img src="<?= BASE_DIR?>storage/images/soc_med_icons/twitter.png" alt="Twitter" class="twitter-logo"></a>
+                <a href="https://plus.google.com/+techpocketvideo" target="_blank"><img src="<?= BASE_DIR?>storage/images/soc_med_icons/google+.png" alt="Google+" class="google-logo"></a>
               </div>
               <div class="social"></div>
             </div>

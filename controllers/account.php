@@ -25,6 +25,10 @@ class Account extends Controller{
   }
 
   public function edit($page){
+    if (Session::user_data("profilesetupstatus") < 4){
+      header("Location: http://192.168.64.2/mvclearn/profile_setup/page/".$page[0]);
+      exit();
+    }
     return array("page" => $page[0]);
     exit();
   }

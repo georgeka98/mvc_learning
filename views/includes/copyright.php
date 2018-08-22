@@ -3,7 +3,7 @@
         <section class="copyright">
           <div class="cont cont-copyright">
             <p class="made-by">This website was made by <a href="http://www.georgekarabassis.com" class="website-dev-name" target="_blank">George Karabassis</a></p>
-            <p class="copyright-statement">© Copyright | All rights reserved</p>
+            <p class="copyright-statement">© Copyright <?php echo date("Y");?> | All rights reserved</p>
           </div>
         </section>
       </footer>

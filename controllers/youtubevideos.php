@@ -15,7 +15,7 @@ class Youtubevideos extends Controller{
     $this->title = YOUTUBE_CHANNEL_NAME;
     $this->view = "youtubevideos/youtubevideos.php";
     // $this->path = "youtubevideos/youtubevideos.php";
-    $this->include_header = False;
+    $this->include_header = True;
     $this->include_footer = True;
     $this->css = "youtubevideos";
     $this->js = "youtubevideos";

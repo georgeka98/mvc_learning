@@ -19,7 +19,6 @@ class Bootstrap{
     $url = isset($_GET['url']) ? explode('/', rtrim($_GET['url'], '/')) : null;
     // print_r($url); //debug
 
-
     if (isset($url[0]) && $url[0] != "home"){
       if (file_exists("controllers/" . $url[0] . '.php')){
 
@@ -28,11 +27,16 @@ class Bootstrap{
 
         Session::init();
 
+        //checking whether user is allowed to access this page
         if ($this->controller->accessible != "all"){
           if($this->controller->accessible == "loggedin" && !Session::get("loggedin")){
             echo "404 page not found";
             return;
           }else if($this->controller->accessible == "not_loggedin" && Session::get("loggedin")){
+            echo "404 page not found";
+            return;
+          }
+          else if($this->controller->accessible == 'allbutmbmebers' && (!Session::get("loggedin") || Session::get("role") == "member" || Session::get("role") == "subscriber")){
             echo "404 page not found";
             return;
           }
@@ -70,7 +74,16 @@ class Bootstrap{
         $this->params = $url;
 
         if ($this->ajax != True){
-          $view->render($this->controller->view, $this->controller->include_footer, $this->controller->include_header);
+          if (is_array($view->data) && array_key_exists("access", $view->data) && $view->data["access"] == "denied"){
+            echo "404 page not found";
+            return;
+          }
+          else{
+            if (is_array($view->data) && array_key_exists("title", $view->data)){
+              $view->title = $view->data["title"];
+            }
+            $view->render($this->controller->view, $this->controller->include_footer, $this->controller->include_header);
+          }
         }
 
       }

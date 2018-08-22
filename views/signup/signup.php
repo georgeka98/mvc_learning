@@ -110,7 +110,7 @@
               I want to receive email notifications
             </label>
           </div>
-          <input type="submit" class="submit" value="Sign up">
+          <input type="submit" name="submit" class="submit" value="Sign up">
         </form>
       </div>
       <p>Don't have an account? Login <a href="login" class="login">here</a></p>

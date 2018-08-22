@@ -144,7 +144,7 @@
               </div>
             </div>
           </div>
-          <input type="submit" class="submit" value="Log in">
+          <input type="submit" name="submit" class="submit" value="Log in">
         </form>
       </div>
       <p>Don't have an account? Signup <a href="signup" class="signup">here</a></p>

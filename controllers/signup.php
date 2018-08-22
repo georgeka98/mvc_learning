@@ -21,7 +21,12 @@ class Signup extends Controller{
   }
 
   public function run(){
-    $this->model->run();
+    if (isset($_POST['submit'])){
+      $this->model->run();
+    }
+    else{
+      return array("access" => "denied");
+    }
   }
 }
 

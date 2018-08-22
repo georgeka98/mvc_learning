@@ -138,8 +138,8 @@
         <input type="text" id="interests" name="interests" value="<?=Session::user_data("interests");?>"/></br>
         <p>My website</p>
         <input type="text" id="main_website" name="main_website" value="<?=Session::user_data("main_website");?>" autocomplete='address-line2'/></br>
-        <p>Membership</p>
-        <input readonly type="text" id="member-type" name="memberType" value="<?=Session::user_data("membertype");?>"/>
+        <p>Role</p>
+        <input readonly type="text" id="member-type" name="memberType" value="<?=Session::user_data("role");?>"/>
         <p>You cannot change this detail. Only <?=WEBSITE_NAME;?> can change this depending on whether you have a job placement on <?=WEBSITE_NAME;?></p>
         <input type="submit" id="save-changes-2" name="save_changes-2" value="Save Changes"/>
       </form>
