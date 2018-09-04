@@ -4,7 +4,7 @@
       <h1 class="article-headline" id="<?=$this->data["ID"];?>"><?=$this->data["title"];?></h1>
     </div>
   </div>
-  <div class="cover-img" style="background-image: url('<?=BASE_DIR.MEDIA_STORAGE_URL.BLOG_STORAGE;?>article-<?=$this->data["ID"];?>/<?=$this->data["cover-photo"];?>')">
+  <div data-pin-nopin class="cover-img" style="background-image: url('<?=BASE_DIR.MEDIA_STORAGE_URL.BLOG_STORAGE;?>article-<?=$this->data["ID"];?>/<?=$this->data["cover-photo"];?>')">
   </div>
 </div>
 
@@ -105,7 +105,7 @@
       <div class="author">
         <div class="main-info">
           <div class="author-prof-wrapper">
-            <img data-pin-nopin class="author-prof" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>profile_pics/<?=$this->data["profile_icon"];?>">
+            <img data-pin-nopin data-pin-nopin class="author-prof" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>profile_pics/<?=$this->data["profile_icon"];?>">
           </div>
           <div class="personal-info">
             <a href="<?=BASE_DIR;?>user/id/<?=$this->data["authorID"];?>" class="full-name"><?=$this->data["firstname"]." ".$this->data["lastname"];?></a>
@@ -132,64 +132,64 @@
           <li>
             <div id="fb-share-button" data-href="<?=$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']?>" data-layout="button_count" data-size="large" data-mobile-iframe="true">
               <a target="_blank" title="Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">
-                <img src="<?=BASE_DIR.MEDIA_STORAGE_URL;?>soc_med_icons/facebook.png" alt="FB"/>
+                <img data-pin-nopin src="<?=BASE_DIR.MEDIA_STORAGE_URL;?>soc_med_icons/facebook.png" alt="FB"/>
               </a>
             </div>
           </li>
           <li>
             <a class="twitter-share-button" title="Twitter" target="_blank" rel="canonical" href="https://twitter.com/intent/tweet?text=Check%20this%20article%20out%20by%20@TechPocket1&url=http://<?=$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']?>" data-size="large">
-              <img src="<?=BASE_DIR.MEDIA_STORAGE_URL;?>soc_med_icons/twitter.png" alt="T"/>
+              <img data-pin-nopin src="<?=BASE_DIR.MEDIA_STORAGE_URL;?>soc_med_icons/twitter.png" alt="T"/>
             </a>
           </li>
           <li>
             <a class="google-share" target="_blank" title="Google+" href="https://plus.google.com/share?url=https://<?=$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']?>" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
-              <img src="<?=BASE_DIR.MEDIA_STORAGE_URL;?>soc_med_icons/google+.png" alt="G+"/>
+              <img data-pin-nopin src="<?=BASE_DIR.MEDIA_STORAGE_URL;?>soc_med_icons/google+.png" alt="G+"/>
             </a>
           </li>
           <li>
             <a class="pinterest-share pinterest" data-pin-do="save" and data-pin-custom="true">
-              <img src="<?=BASE_DIR.MEDIA_STORAGE_URL;?>soc_med_icons/pinterest.png" alt="Pin"/>
+              <img data-pin-nopin src="<?=BASE_DIR.MEDIA_STORAGE_URL;?>soc_med_icons/pinterest.png" alt="Pin"/>
             </a>
           </li>
           <!-- <script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
           <script type="IN/Share" data-url="<?=BASE_DIR?>blog/article/greeks-urged-to-leave-homes-as-wildfires-near-athens-rage-out-of-control"></script>  -->
           <li>
             <a class="linkedin-share" target="_blank" title="Linkedin" href="http://www.linkedin.com/shareArticle?mini=true&url=<?=$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']?>&title=<?=$this->data["title"];?>&summary=Check%20out%20this%20article%20by%20<?=WEBSITE_NAME?>&source=<?=WEBSITE_NAME?>">
-              <img src="<?=BASE_DIR.MEDIA_STORAGE_URL;?>soc_med_icons/linkedin.png" alt="LN"/>
+              <img data-pin-nopin src="<?=BASE_DIR.MEDIA_STORAGE_URL;?>soc_med_icons/linkedin.png" alt="LN"/>
             </a>
           </li>
           <li>
             <a class="tumblr-share" target="_blank" title="Tumblr" href="https://www.tumblr.com/widgets/share/tool/preview?posttype=photo&content=<?=BASE_DIR.MEDIA_STORAGE_URL?>blog/article-<?=$this->data['ID'];?>/<?=$this->data["cover-photo"];?>&caption=<?=$this->data["title"];?>&url=<?=$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']?>&clickthroughUrl=<?=$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']?>&caption=<?=$this->data["title"];?>">
-              <img src="<?=BASE_DIR.MEDIA_STORAGE_URL;?>soc_med_icons/tumblr.png" alt="Tu"/>
+              <img data-pin-nopin src="<?=BASE_DIR.MEDIA_STORAGE_URL;?>soc_med_icons/tumblr.png" alt="Tu"/>
             </a>
           </li>
           <li>
             <!--MySpace Share button Start-->
              <!--Created By Merelesson.com-->
              <a href='https://myspace.com' target="_blank" onclick='window.open(&apos;https://myspace.com/post?u=&apos;+encodeURIComponent(location.href)+&apos;&amp;bodytext=&amp;tags=&amp;title=&apos;+encodeURIComponent(document.title));return false;' rel='nofollow' style='text-decoration:none;' title='Share on Myspace'>
-               <img src="<?=BASE_DIR.MEDIA_STORAGE_URL;?>soc_med_icons/myspace.png"/>
+               <img data-pin-nopin src="<?=BASE_DIR.MEDIA_STORAGE_URL;?>soc_med_icons/myspace.png"/>
              </a>
             <!--MySpace Share Button End-->
           </li>
           <li>
             <a class="whatsapp-share" target="_blank" title="WhatsApp" href="whatsapp://send?text='<?=$this->data["title"];?>%20<?=$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']?>'">
-              <img data-pin-nopin src="<?=BASE_DIR.MEDIA_STORAGE_URL;?>soc_med_icons/whatsapp.png" alt="WhatsApp"/>
+              <img data-pin-nopin data-pin-nopin src="<?=BASE_DIR.MEDIA_STORAGE_URL;?>soc_med_icons/whatsapp.png" alt="WhatsApp"/>
             </a>
           </li>
           <li>
             <a class="messenger-share" target="_blank" title="WhatsApp" href="whatsapp://send?text='<?=$this->data["title"];?>%20<?=$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']?>'">
-              <img data-pin-nopin src="<?=BASE_DIR.MEDIA_STORAGE_URL;?>soc_med_icons/messenger.png" alt="Messenger"/>
+              <img data-pin-nopin data-pin-nopin src="<?=BASE_DIR.MEDIA_STORAGE_URL;?>soc_med_icons/messenger.png" alt="Messenger"/>
             </a>
           </li>
           <!-- <li>
             <a class="flickr-share" target="_blank" title="Flickr">
-              <img src="<?=BASE_DIR.MEDIA_STORAGE_URL;?>soc_med_icons/flickr.png" alt="Fl"/>
+              <img data-pin-nopin src="<?=BASE_DIR.MEDIA_STORAGE_URL;?>soc_med_icons/flickr.png" alt="Fl"/>
             </a>
           </li> -->
-          <!-- <li><a class="reddit-share"><img src="<?=BASE_DIR.MEDIA_STORAGE_URL;?>soc_med_icons/reddit.png" alt="Re"/></a></li> -->
+          <!-- <li><a class="reddit-share"><img data-pin-nopin src="<?=BASE_DIR.MEDIA_STORAGE_URL;?>soc_med_icons/reddit.png" alt="Re"/></a></li> -->
           <li>
             <a class="email-share" target="_blank" title="email" href="mailto:?subject=<?=$this->data["title"];?>&body=Hey,%20check%20out%20this%20article%20I%20found%20on%20the%20<?=WEBSITE_NAME?>%20website:%20http://<?=$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']?>">
-              <img data-pin-nopin src="<?=BASE_DIR.MEDIA_STORAGE_URL;?>soc_med_icons/mail icon.png" alt="Email"/>
+              <img data-pin-nopin data-pin-nopin src="<?=BASE_DIR.MEDIA_STORAGE_URL;?>soc_med_icons/mail icon.png" alt="Email"/>
             </a>
           </li>
         </ul>
@@ -211,64 +211,64 @@
         <li>
           <div id="fb-share-button" data-href="<?=$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']?>" data-layout="button_count" data-size="large" data-mobile-iframe="true">
             <a target="_blank" title="Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">
-              <img src="<?=BASE_DIR.MEDIA_STORAGE_URL;?>soc_med_icons/facebook.png" alt="FB"/>
+              <img data-pin-nopin src="<?=BASE_DIR.MEDIA_STORAGE_URL;?>soc_med_icons/facebook.png" alt="FB"/>
             </a>
           </div>
         </li>
         <li>
           <a class="twitter-share-button" title="Twitter" target="_blank" rel="canonical" href="https://twitter.com/intent/tweet?text=Check%20this%20article%20out%20by%20@TechPocket1&url=http://<?=$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']?>" data-size="large">
-            <img src="<?=BASE_DIR.MEDIA_STORAGE_URL;?>soc_med_icons/twitter.png" alt="T"/>
+            <img data-pin-nopin src="<?=BASE_DIR.MEDIA_STORAGE_URL;?>soc_med_icons/twitter.png" alt="T"/>
           </a>
         </li>
         <li>
           <a class="google-share" target="_blank" title="Google+" href="https://plus.google.com/share?url=https://<?=$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']?>" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
-            <img src="<?=BASE_DIR.MEDIA_STORAGE_URL;?>soc_med_icons/google+.png" alt="G+"/>
+            <img data-pin-nopin src="<?=BASE_DIR.MEDIA_STORAGE_URL;?>soc_med_icons/google+.png" alt="G+"/>
           </a>
         </li>
         <li>
           <a class="pinterest-share pinterest" data-pin-do="save" and data-pin-custom="true">
-            <img src="<?=BASE_DIR.MEDIA_STORAGE_URL;?>soc_med_icons/pinterest.png" alt="Pin"/>
+            <img data-pin-nopin src="<?=BASE_DIR.MEDIA_STORAGE_URL;?>soc_med_icons/pinterest.png" alt="Pin"/>
           </a>
         </li>
         <!-- <script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
         <script type="IN/Share" data-url="<?=BASE_DIR?>blog/article/greeks-urged-to-leave-homes-as-wildfires-near-athens-rage-out-of-control"></script>  -->
         <li>
           <a class="linkedin-share" target="_blank" title="Linkedin" href="http://www.linkedin.com/shareArticle?mini=true&url=<?=$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']?>&title=<?=$this->data["title"];?>&summary=Check out this article by <?=WEBSITE_NAME?>&source=<?=WEBSITE_NAME?>.com">
-            <img src="<?=BASE_DIR.MEDIA_STORAGE_URL;?>soc_med_icons/linkedin.png" alt="LN"/>
+            <img data-pin-nopin src="<?=BASE_DIR.MEDIA_STORAGE_URL;?>soc_med_icons/linkedin.png" alt="LN"/>
           </a>
         </li>
         <li>
           <a class="tumblr-share" target="_blank" title="Tumblr" href="https://www.tumblr.com/widgets/share/tool/preview?posttype=photo&content=<?=BASE_DIR.MEDIA_STORAGE_URL?>blog/article-<?=$this->data['ID'];?>/<?=$this->data["cover-photo"];?>&caption=<?=$this->data["title"];?>&url=<?=$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']?>&clickthroughUrl=<?=$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']?>&caption=<?=$this->data["title"];?>">
-            <img src="<?=BASE_DIR.MEDIA_STORAGE_URL;?>soc_med_icons/tumblr.png" alt="Tu"/>
+            <img data-pin-nopin src="<?=BASE_DIR.MEDIA_STORAGE_URL;?>soc_med_icons/tumblr.png" alt="Tu"/>
           </a>
         </li>
         <li>
           <!--MySpace Share button Start-->
            <!--Created By Merelesson.com-->
            <a href='https://myspace.com' target="_blank" onclick='window.open(&apos;https://myspace.com/post?u=&apos;+encodeURIComponent(location.href)+&apos;&amp;bodytext=&amp;tags=&amp;title=&apos;+encodeURIComponent(document.title));return false;' rel='nofollow' style='text-decoration:none;' title='Share on Myspace'>
-             <img src="<?=BASE_DIR.MEDIA_STORAGE_URL;?>soc_med_icons/myspace.png"/>
+             <img data-pin-nopin src="<?=BASE_DIR.MEDIA_STORAGE_URL;?>soc_med_icons/myspace.png"/>
            </a>
           <!--MySpace Share Button End-->
         </li>
         <li>
           <a class="whatsapp-share" target="_blank" title="WhatsApp" href="whatsapp://send?text='<?=$this->data["title"];?>%20<?=$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']?>'">
-            <img data-pin-nopin src="<?=BASE_DIR.MEDIA_STORAGE_URL;?>soc_med_icons/whatsapp.png" alt="WhatsApp"/>
+            <img data-pin-nopin data-pin-nopin src="<?=BASE_DIR.MEDIA_STORAGE_URL;?>soc_med_icons/whatsapp.png" alt="WhatsApp"/>
           </a>
         </li>
         <li>
           <a class="messenger-share" target="_blank" title="WhatsApp" href="whatsapp://send?text='<?=$this->data["title"];?>%20<?=$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']?>'">
-            <img data-pin-nopin src="<?=BASE_DIR.MEDIA_STORAGE_URL;?>soc_med_icons/messenger.png" alt="Messenger"/>
+            <img data-pin-nopin data-pin-nopin src="<?=BASE_DIR.MEDIA_STORAGE_URL;?>soc_med_icons/messenger.png" alt="Messenger"/>
           </a>
         </li>
         <!-- <li>
           <a class="flickr-share" target="_blank" title="Flickr">
-            <img src="<?=BASE_DIR.MEDIA_STORAGE_URL;?>soc_med_icons/flickr.png" alt="Fl"/>
+            <img data-pin-nopin src="<?=BASE_DIR.MEDIA_STORAGE_URL;?>soc_med_icons/flickr.png" alt="Fl"/>
           </a>
         </li> -->
-        <!-- <li><a class="reddit-share"><img src="<?=BASE_DIR.MEDIA_STORAGE_URL;?>soc_med_icons/reddit.png" alt="Re"/></a></li> -->
+        <!-- <li><a class="reddit-share"><img data-pin-nopin src="<?=BASE_DIR.MEDIA_STORAGE_URL;?>soc_med_icons/reddit.png" alt="Re"/></a></li> -->
         <li>
           <a class="email-share" target="_blank" title="email" href="mailto:?subject=<?=$this->data["title"];?>&body=Hey,%20check%20out%20this%20article%20I%20found%20on%20the%20<?=WEBSITE_NAME?>%20website:%20http://<?=$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']?>">
-            <img data-pin-nopin src="<?=BASE_DIR.MEDIA_STORAGE_URL;?>soc_med_icons/mail icon.png" alt="Email"/>
+            <img data-pin-nopin data-pin-nopin src="<?=BASE_DIR.MEDIA_STORAGE_URL;?>soc_med_icons/mail icon.png" alt="Email"/>
           </a>
         </li>
       </ul>
@@ -298,64 +298,64 @@
         <li>
           <div id="fb-share-button" data-href="<?=$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']?>" data-layout="button_count" data-size="large" data-mobile-iframe="true">
             <a target="_blank" title="Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">
-              <img src="<?=BASE_DIR.MEDIA_STORAGE_URL;?>soc_med_icons/facebook.png" alt="FB"/>
+              <img data-pin-nopin src="<?=BASE_DIR.MEDIA_STORAGE_URL;?>soc_med_icons/facebook.png" alt="FB"/>
             </a>
           </div>
         </li>
         <li>
           <a class="twitter-share-button" title="Twitter" target="_blank" rel="canonical" href="https://twitter.com/intent/tweet?text=Check%20this%20article%20out%20by%20@TechPocket1&url=http://<?=$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']?>" data-size="large">
-            <img src="<?=BASE_DIR.MEDIA_STORAGE_URL;?>soc_med_icons/twitter.png" alt="T"/>
+            <img data-pin-nopin src="<?=BASE_DIR.MEDIA_STORAGE_URL;?>soc_med_icons/twitter.png" alt="T"/>
           </a>
         </li>
         <li>
           <a class="google-share" target="_blank" title="Google+" href="https://plus.google.com/share?url=https://<?=$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']?>" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
-            <img src="<?=BASE_DIR.MEDIA_STORAGE_URL;?>soc_med_icons/google+.png" alt="G+"/>
+            <img data-pin-nopin src="<?=BASE_DIR.MEDIA_STORAGE_URL;?>soc_med_icons/google+.png" alt="G+"/>
           </a>
         </li>
         <li>
           <a class="pinterest-share pinterest" data-pin-do="save" and data-pin-custom="true">
-            <img src="<?=BASE_DIR.MEDIA_STORAGE_URL;?>soc_med_icons/pinterest.png" alt="Pin"/>
+            <img data-pin-nopin src="<?=BASE_DIR.MEDIA_STORAGE_URL;?>soc_med_icons/pinterest.png" alt="Pin"/>
           </a>
         </li>
         <!-- <script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
         <script type="IN/Share" data-url="<?=BASE_DIR?>blog/article/greeks-urged-to-leave-homes-as-wildfires-near-athens-rage-out-of-control"></script>  -->
         <li>
           <a class="linkedin-share" target="_blank" title="Linkedin" href="http://www.linkedin.com/shareArticle?mini=true&url=<?=$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']?>&title=<?=$this->data["title"];?>&summary=Check out this article by <?=WEBSITE_NAME?>&source=<?=WEBSITE_NAME?>.com">
-            <img src="<?=BASE_DIR.MEDIA_STORAGE_URL;?>soc_med_icons/linkedin.png" alt="LN"/>
+            <img data-pin-nopin src="<?=BASE_DIR.MEDIA_STORAGE_URL;?>soc_med_icons/linkedin.png" alt="LN"/>
           </a>
         </li>
         <li>
           <a class="tumblr-share" target="_blank" title="Tumblr" href="https://www.tumblr.com/widgets/share/tool/preview?posttype=photo&content=<?=BASE_DIR.MEDIA_STORAGE_URL?>blog/article-<?=$this->data['ID'];?>/<?=$this->data["cover-photo"];?>&caption=<?=$this->data["title"];?>&url=<?=$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']?>&clickthroughUrl=<?=$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']?>&caption=<?=$this->data["title"];?>">
-            <img src="<?=BASE_DIR.MEDIA_STORAGE_URL;?>soc_med_icons/tumblr.png" alt="Tu"/>
+            <img data-pin-nopin src="<?=BASE_DIR.MEDIA_STORAGE_URL;?>soc_med_icons/tumblr.png" alt="Tu"/>
           </a>
         </li>
         <li>
           <!--MySpace Share button Start-->
            <!--Created By Merelesson.com-->
            <a href='https://myspace.com' target="_blank" onclick='window.open(&apos;https://myspace.com/post?u=&apos;+encodeURIComponent(location.href)+&apos;&amp;bodytext=&amp;tags=&amp;title=&apos;+encodeURIComponent(document.title));return false;' rel='nofollow' style='text-decoration:none;' title='Share on Myspace'>
-             <img src="<?=BASE_DIR.MEDIA_STORAGE_URL;?>soc_med_icons/myspace.png"/>
+             <img data-pin-nopin src="<?=BASE_DIR.MEDIA_STORAGE_URL;?>soc_med_icons/myspace.png"/>
            </a>
           <!--MySpace Share Button End-->
         </li>
         <li>
           <a class="whatsapp-share" target="_blank" title="WhatsApp" href="whatsapp://send?text='<?=$this->data["title"];?>%20<?=$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']?>'">
-            <img data-pin-nopin src="<?=BASE_DIR.MEDIA_STORAGE_URL;?>soc_med_icons/whatsapp.png" alt="WhatsApp"/>
+            <img data-pin-nopin data-pin-nopin src="<?=BASE_DIR.MEDIA_STORAGE_URL;?>soc_med_icons/whatsapp.png" alt="WhatsApp"/>
           </a>
         </li>
         <li>
           <a class="messenger-share" target="_blank" title="WhatsApp" href="whatsapp://send?text='<?=$this->data["title"];?>%20<?=$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']?>'">
-            <img data-pin-nopin src="<?=BASE_DIR.MEDIA_STORAGE_URL;?>soc_med_icons/messenger.png" alt="Messenger"/>
+            <img data-pin-nopin data-pin-nopin src="<?=BASE_DIR.MEDIA_STORAGE_URL;?>soc_med_icons/messenger.png" alt="Messenger"/>
           </a>
         </li>
         <!-- <li>
           <a class="flickr-share" target="_blank" title="Flickr">
-            <img src="<?=BASE_DIR.MEDIA_STORAGE_URL;?>soc_med_icons/flickr.png" alt="Fl"/>
+            <img data-pin-nopin src="<?=BASE_DIR.MEDIA_STORAGE_URL;?>soc_med_icons/flickr.png" alt="Fl"/>
           </a>
         </li> -->
-        <!-- <li><a class="reddit-share"><img src="<?=BASE_DIR.MEDIA_STORAGE_URL;?>soc_med_icons/reddit.png" alt="Re"/></a></li> -->
+        <!-- <li><a class="reddit-share"><img data-pin-nopin src="<?=BASE_DIR.MEDIA_STORAGE_URL;?>soc_med_icons/reddit.png" alt="Re"/></a></li> -->
         <li>
           <a class="email-share" target="_blank" title="email" href="mailto:?subject=<?=$this->data["title"];?>&body=Hey,%20check%20out%20this%20article%20I%20found%20on%20the%20<?=WEBSITE_NAME?>%20website:%20http://<?=$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']?>">
-            <img data-pin-nopin src="<?=BASE_DIR.MEDIA_STORAGE_URL;?>soc_med_icons/mail icon.png" alt="Email"/>
+            <img data-pin-nopin data-pin-nopin src="<?=BASE_DIR.MEDIA_STORAGE_URL;?>soc_med_icons/mail icon.png" alt="Email"/>
           </a>
         </li>
       </ul>
@@ -400,7 +400,7 @@
         <div class="article-link-wrap">
           <a class="article-link" href="<?=BASE_DIR?>blog/article/greeks-urged-to-leave-homes-as-wildfires-near-athens-rage-out-of-control">
             <div class="hot-article-cover-wrap">
-              <img class="hot-article-cover" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>blog/article-<?=$this->data['ID'];?>/<?=$this->data["cover-photo"];?>"/>
+              <img data-pin-nopin class="hot-article-cover" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>blog/article-<?=$this->data['ID'];?>/<?=$this->data["cover-photo"];?>"/>
             </div>
             <div class="hot-title-wrap">
               <p class="hot-title"><?=$this->data['title'];?></p>
@@ -410,7 +410,7 @@
         <div class="article-link-wrap">
           <a class="article-link" href="<?=BASE_DIR?>blog/article/greeks-urged-to-leave-homes-as-wildfires-near-athens-rage-out-of-control">
             <div class="hot-article-cover-wrap">
-              <img class="hot-article-cover" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>blog/article-<?=$this->data['ID'];?>/<?=$this->data["cover-photo"];?>"/>
+              <img data-pin-nopin class="hot-article-cover" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>blog/article-<?=$this->data['ID'];?>/<?=$this->data["cover-photo"];?>"/>
             </div>
             <div class="hot-title-wrap">
               <p class="hot-title"><?=$this->data['title'];?></p>
@@ -420,7 +420,7 @@
         <div class="article-link-wrap">
           <a class="article-link" href="<?=BASE_DIR?>blog/article/greeks-urged-to-leave-homes-as-wildfires-near-athens-rage-out-of-control">
             <div class="hot-article-cover-wrap">
-              <img class="hot-article-cover" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>blog/article-<?=$this->data['ID'];?>/<?=$this->data["cover-photo"];?>"/>
+              <img data-pin-nopin class="hot-article-cover" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>blog/article-<?=$this->data['ID'];?>/<?=$this->data["cover-photo"];?>"/>
             </div>
             <div class="hot-title-wrap">
               <p class="hot-title"><?=$this->data['title'];?></p>
@@ -430,7 +430,7 @@
         <div class="article-link-wrap">
           <a class="article-link" href="<?=BASE_DIR?>blog/article/greeks-urged-to-leave-homes-as-wildfires-near-athens-rage-out-of-control">
             <div class="hot-article-cover-wrap">
-              <img class="hot-article-cover" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>blog/article-<?=$this->data['ID'];?>/<?=$this->data["cover-photo"];?>"/>
+              <img data-pin-nopin class="hot-article-cover" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>blog/article-<?=$this->data['ID'];?>/<?=$this->data["cover-photo"];?>"/>
             </div>
             <div class="hot-title-wrap">
               <p class="hot-title"><?=$this->data['title'];?></p>
@@ -440,7 +440,7 @@
         <div class="article-link-wrap">
           <a class="article-link" href="<?=BASE_DIR?>blog/article/greeks-urged-to-leave-homes-as-wildfires-near-athens-rage-out-of-control">
             <div class="hot-article-cover-wrap">
-              <img class="hot-article-cover" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>blog/article-<?=$this->data['ID'];?>/<?=$this->data["cover-photo"];?>"/>
+              <img data-pin-nopin class="hot-article-cover" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>blog/article-<?=$this->data['ID'];?>/<?=$this->data["cover-photo"];?>"/>
             </div>
             <div class="hot-title-wrap">
               <p class="hot-title"><?=$this->data['title'];?></p>
@@ -450,7 +450,7 @@
         <div class="article-link-wrap">
           <a class="article-link" href="<?=BASE_DIR?>blog/article/greeks-urged-to-leave-homes-as-wildfires-near-athens-rage-out-of-control">
             <div class="hot-article-cover-wrap">
-              <img class="hot-article-cover" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>blog/article-<?=$this->data['ID'];?>/<?=$this->data["cover-photo"];?>"/>
+              <img data-pin-nopin class="hot-article-cover" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>blog/article-<?=$this->data['ID'];?>/<?=$this->data["cover-photo"];?>"/>
             </div>
             <div class="hot-title-wrap">
               <p class="hot-title"><?=$this->data['title'];?></p>
@@ -468,7 +468,7 @@
     <span class="text-label">About the Author</span>
   </div>
   <div class="prof-wrapper">
-    <img data-pin-nopin class="author-prof" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>profile_pics/<?=$this->data["profile_icon"];?>">
+    <img data-pin-nopin data-pin-nopin class="author-prof" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>profile_pics/<?=$this->data["profile_icon"];?>">
   </div>
   <div class="main-info">
     <a href="<?=BASE_DIR;?>user/id/<?=$this->data["authorID"];?>" class="full-name"><?=$this->data["firstname"]." ".$this->data["lastname"];?></a>
@@ -491,7 +491,7 @@
     <div class="column-item-cont">
       <div class="column-item row-item">
         <div class="item-img-cover">
-          <img class="article-item-cover" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>blog/article-<?=$this->data['ID'];?>/<?=$this->data["cover-photo"];?>"/>
+          <img data-pin-nopin class="article-item-cover" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>blog/article-<?=$this->data['ID'];?>/<?=$this->data["cover-photo"];?>"/>
         </div>
         <div class="item-body">
           <div class="article-item-title">
@@ -502,7 +502,7 @@
           <span class="body-separator"></span>
           <div class="article-item-author">
             <div class="item-author-profile-pic">
-              <img data-pin-nopin class="author-prof" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>profile_pics/<?=$this->data["profile_icon"];?>"/>
+              <img data-pin-nopin data-pin-nopin class="author-prof" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>profile_pics/<?=$this->data["profile_icon"];?>"/>
             </div>
             <div class="item-author-info">
               <p class="full-name"><?=$this->data["firstname"]." ".$this->data["lastname"];?></p>
@@ -515,7 +515,7 @@
     </div><div class="column-item-cont">
       <div class="column-item row-item">
         <div class="item-img-cover">
-          <img class="article-item-cover" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>blog/article-<?=$this->data['ID'];?>/<?=$this->data["cover-photo"];?>"/>
+          <img data-pin-nopin class="article-item-cover" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>blog/article-<?=$this->data['ID'];?>/<?=$this->data["cover-photo"];?>"/>
         </div>
         <div class="item-body">
           <div class="article-item-title">
@@ -526,7 +526,7 @@
           <span class="body-separator"></span>
           <div class="article-item-author">
             <div class="item-author-profile-pic">
-              <img data-pin-nopin class="author-prof" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>profile_pics/<?=$this->data["profile_icon"];?>"/>
+              <img data-pin-nopin data-pin-nopin class="author-prof" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>profile_pics/<?=$this->data["profile_icon"];?>"/>
             </div>
             <div class="item-author-info">
               <p class="full-name"><?=$this->data["firstname"]." ".$this->data["lastname"];?></p>
@@ -539,7 +539,7 @@
     </div><div class="column-item-cont">
       <div class="column-item row-item">
         <div class="item-img-cover">
-          <img class="article-item-cover" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>blog/article-<?=$this->data['ID'];?>/<?=$this->data["cover-photo"];?>"/>
+          <img data-pin-nopin class="article-item-cover" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>blog/article-<?=$this->data['ID'];?>/<?=$this->data["cover-photo"];?>"/>
         </div>
         <div class="item-body">
           <div class="article-item-title">
@@ -550,7 +550,7 @@
           <span class="body-separator"></span>
           <div class="article-item-author">
             <div class="item-author-profile-pic">
-              <img data-pin-nopin class="author-prof" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>profile_pics/<?=$this->data["profile_icon"];?>"/>
+              <img data-pin-nopin data-pin-nopin class="author-prof" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>profile_pics/<?=$this->data["profile_icon"];?>"/>
             </div>
             <div class="item-author-info">
               <p class="full-name"><?=$this->data["firstname"]." ".$this->data["lastname"];?></p>
@@ -563,7 +563,7 @@
     </div><div class="column-item-cont">
       <div class="column-item row-item">
         <div class="item-img-cover">
-          <img class="article-item-cover" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>blog/article-<?=$this->data['ID'];?>/<?=$this->data["cover-photo"];?>"/>
+          <img data-pin-nopin class="article-item-cover" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>blog/article-<?=$this->data['ID'];?>/<?=$this->data["cover-photo"];?>"/>
         </div>
         <div class="item-body">
           <div class="article-item-title">
@@ -574,7 +574,7 @@
           <span class="body-separator"></span>
           <div class="article-item-author">
             <div class="item-author-profile-pic">
-              <img data-pin-nopin class="author-prof" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>profile_pics/<?=$this->data["profile_icon"];?>"/>
+              <img data-pin-nopin data-pin-nopin class="author-prof" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>profile_pics/<?=$this->data["profile_icon"];?>"/>
             </div>
             <div class="item-author-info">
               <p class="full-name"><?=$this->data["firstname"]." ".$this->data["lastname"];?></p>
@@ -587,7 +587,7 @@
     </div><div class="column-item-cont">
       <div class="column-item row-item">
         <div class="item-img-cover">
-          <img class="article-item-cover" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>blog/article-<?=$this->data['ID'];?>/<?=$this->data["cover-photo"];?>"/>
+          <img data-pin-nopin class="article-item-cover" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>blog/article-<?=$this->data['ID'];?>/<?=$this->data["cover-photo"];?>"/>
         </div>
         <div class="item-body">
           <div class="article-item-title">
@@ -598,7 +598,7 @@
           <span class="body-separator"></span>
           <div class="article-item-author">
             <div class="item-author-profile-pic">
-              <img data-pin-nopin class="author-prof" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>profile_pics/<?=$this->data["profile_icon"];?>"/>
+              <img data-pin-nopin data-pin-nopin class="author-prof" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>profile_pics/<?=$this->data["profile_icon"];?>"/>
             </div>
             <div class="item-author-info">
               <p class="full-name"><?=$this->data["firstname"]." ".$this->data["lastname"];?></p>
@@ -611,7 +611,7 @@
     </div><div class="column-item-cont">
       <div class="column-item row-item">
         <div class="item-img-cover">
-          <img class="article-item-cover" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>blog/article-<?=$this->data['ID'];?>/<?=$this->data["cover-photo"];?>"/>
+          <img data-pin-nopin class="article-item-cover" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>blog/article-<?=$this->data['ID'];?>/<?=$this->data["cover-photo"];?>"/>
         </div>
         <div class="item-body">
           <div class="article-item-title">
@@ -622,7 +622,7 @@
           <span class="body-separator"></span>
           <div class="article-item-author">
             <div class="item-author-profile-pic">
-              <img data-pin-nopin class="author-prof" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>profile_pics/<?=$this->data["profile_icon"];?>"/>
+              <img data-pin-nopin data-pin-nopin class="author-prof" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>profile_pics/<?=$this->data["profile_icon"];?>"/>
             </div>
             <div class="item-author-info">
               <p class="full-name"><?=$this->data["firstname"]." ".$this->data["lastname"];?></p>
@@ -644,7 +644,7 @@
     <div class="column-item-cont">
       <div class="column-item row-item">
         <div class="item-img-cover">
-          <img class="article-item-cover" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>blog/article-<?=$this->data['ID'];?>/<?=$this->data["cover-photo"];?>"/>
+          <img data-pin-nopin class="article-item-cover" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>blog/article-<?=$this->data['ID'];?>/<?=$this->data["cover-photo"];?>"/>
         </div>
         <div class="item-body">
           <div class="article-item-title">
@@ -655,7 +655,7 @@
           <span class="body-separator"></span>
           <div class="article-item-author">
             <div class="item-author-profile-pic">
-              <img data-pin-nopin class="author-prof" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>profile_pics/<?=$this->data["profile_icon"];?>"/>
+              <img data-pin-nopin data-pin-nopin class="author-prof" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>profile_pics/<?=$this->data["profile_icon"];?>"/>
             </div>
             <div class="item-author-info">
               <p class="full-name"><?=$this->data["firstname"]." ".$this->data["lastname"];?></p>
@@ -668,7 +668,7 @@
     </div><div class="column-item-cont">
       <div class="column-item row-item">
         <div class="item-img-cover">
-          <img class="article-item-cover" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>blog/article-<?=$this->data['ID'];?>/<?=$this->data["cover-photo"];?>"/>
+          <img data-pin-nopin class="article-item-cover" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>blog/article-<?=$this->data['ID'];?>/<?=$this->data["cover-photo"];?>"/>
         </div>
         <div class="item-body">
           <div class="article-item-title">
@@ -679,7 +679,7 @@
           <span class="body-separator"></span>
           <div class="article-item-author">
             <div class="item-author-profile-pic">
-              <img data-pin-nopin class="author-prof" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>profile_pics/<?=$this->data["profile_icon"];?>"/>
+              <img data-pin-nopin data-pin-nopin class="author-prof" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>profile_pics/<?=$this->data["profile_icon"];?>"/>
             </div>
             <div class="item-author-info">
               <p class="full-name"><?=$this->data["firstname"]." ".$this->data["lastname"];?></p>
@@ -692,7 +692,7 @@
     </div><div class="column-item-cont">
       <div class="column-item row-item">
         <div class="item-img-cover">
-          <img class="article-item-cover" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>blog/article-<?=$this->data['ID'];?>/<?=$this->data["cover-photo"];?>"/>
+          <img data-pin-nopin class="article-item-cover" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>blog/article-<?=$this->data['ID'];?>/<?=$this->data["cover-photo"];?>"/>
         </div>
         <div class="item-body">
           <div class="article-item-title">
@@ -703,7 +703,7 @@
           <span class="body-separator"></span>
           <div class="article-item-author">
             <div class="item-author-profile-pic">
-              <img data-pin-nopin class="author-prof" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>profile_pics/<?=$this->data["profile_icon"];?>"/>
+              <img data-pin-nopin data-pin-nopin class="author-prof" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>profile_pics/<?=$this->data["profile_icon"];?>"/>
             </div>
             <div class="item-author-info">
               <p class="full-name"><?=$this->data["firstname"]." ".$this->data["lastname"];?></p>
@@ -716,7 +716,7 @@
     </div><div class="column-item-cont">
       <div class="column-item row-item">
         <div class="item-img-cover">
-          <img class="article-item-cover" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>blog/article-<?=$this->data['ID'];?>/<?=$this->data["cover-photo"];?>"/>
+          <img data-pin-nopin class="article-item-cover" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>blog/article-<?=$this->data['ID'];?>/<?=$this->data["cover-photo"];?>"/>
         </div>
         <div class="item-body">
           <div class="article-item-title">
@@ -727,7 +727,7 @@
           <span class="body-separator"></span>
           <div class="article-item-author">
             <div class="item-author-profile-pic">
-              <img data-pin-nopin class="author-prof" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>profile_pics/<?=$this->data["profile_icon"];?>"/>
+              <img data-pin-nopin data-pin-nopin class="author-prof" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>profile_pics/<?=$this->data["profile_icon"];?>"/>
             </div>
             <div class="item-author-info">
               <p class="full-name"><?=$this->data["firstname"]." ".$this->data["lastname"];?></p>
@@ -740,7 +740,7 @@
     </div><div class="column-item-cont">
       <div class="column-item row-item">
         <div class="item-img-cover">
-          <img class="article-item-cover" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>blog/article-<?=$this->data['ID'];?>/<?=$this->data["cover-photo"];?>"/>
+          <img data-pin-nopin class="article-item-cover" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>blog/article-<?=$this->data['ID'];?>/<?=$this->data["cover-photo"];?>"/>
         </div>
         <div class="item-body">
           <div class="article-item-title">
@@ -751,7 +751,7 @@
           <span class="body-separator"></span>
           <div class="article-item-author">
             <div class="item-author-profile-pic">
-              <img data-pin-nopin class="author-prof" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>profile_pics/<?=$this->data["profile_icon"];?>"/>
+              <img data-pin-nopin data-pin-nopin class="author-prof" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>profile_pics/<?=$this->data["profile_icon"];?>"/>
             </div>
             <div class="item-author-info">
               <p class="full-name"><?=$this->data["firstname"]." ".$this->data["lastname"];?></p>
@@ -764,7 +764,7 @@
     </div><div class="column-item-cont">
       <div class="column-item row-item">
         <div class="item-img-cover">
-          <img class="article-item-cover" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>blog/article-<?=$this->data['ID'];?>/<?=$this->data["cover-photo"];?>"/>
+          <img data-pin-nopin class="article-item-cover" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>blog/article-<?=$this->data['ID'];?>/<?=$this->data["cover-photo"];?>"/>
         </div>
         <div class="item-body">
           <div class="article-item-title">
@@ -775,7 +775,7 @@
           <span class="body-separator"></span>
           <div class="article-item-author">
             <div class="item-author-profile-pic">
-              <img data-pin-nopin class="author-prof" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>profile_pics/<?=$this->data["profile_icon"];?>"/>
+              <img data-pin-nopin data-pin-nopin class="author-prof" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>profile_pics/<?=$this->data["profile_icon"];?>"/>
             </div>
             <div class="item-author-info">
               <p class="full-name"><?=$this->data["firstname"]." ".$this->data["lastname"];?></p>
@@ -799,7 +799,7 @@
       <?php if (Session::get("loggedin") == True): ?>
         <form class="comment-box">
           <div class="user-info">
-            <img class="author-prof" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>profile_pics/<?=Session::user_data("profile_icon");?>">
+            <img data-pin-nopin class="author-prof" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>profile_pics/<?=Session::user_data("profile_icon");?>">
             <p class="firstname"><?=Session::user_data("firstname");?></p>
           </div>
           <div class="comment-input-wrapper">
@@ -877,7 +877,7 @@
     <div class="column-item-cont">
       <div class="column-item row-item">
         <div class="item-img-cover">
-          <img class="article-item-cover" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>blog/article-<?=$this->data['ID'];?>/<?=$this->data["cover-photo"];?>"/>
+          <img data-pin-nopin class="article-item-cover" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>blog/article-<?=$this->data['ID'];?>/<?=$this->data["cover-photo"];?>"/>
         </div>
         <div class="item-body">
           <div class="article-item-title">
@@ -888,7 +888,7 @@
           <span class="body-separator"></span>
           <div class="article-item-author">
             <div class="item-author-profile-pic">
-              <img data-pin-nopin class="author-prof" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>profile_pics/<?=$this->data["profile_icon"];?>"/>
+              <img data-pin-nopin data-pin-nopin class="author-prof" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>profile_pics/<?=$this->data["profile_icon"];?>"/>
             </div>
             <div class="item-author-info">
               <p class="full-name"><?=$this->data["firstname"]." ".$this->data["lastname"];?></p>
@@ -901,7 +901,7 @@
     </div><div class="column-item-cont">
       <div class="column-item row-item">
         <div class="item-img-cover">
-          <img class="article-item-cover" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>blog/article-<?=$this->data['ID'];?>/<?=$this->data["cover-photo"];?>"/>
+          <img data-pin-nopin class="article-item-cover" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>blog/article-<?=$this->data['ID'];?>/<?=$this->data["cover-photo"];?>"/>
         </div>
         <div class="item-body">
           <div class="article-item-title">
@@ -912,7 +912,7 @@
           <span class="body-separator"></span>
           <div class="article-item-author">
             <div class="item-author-profile-pic">
-              <img data-pin-nopin class="author-prof" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>profile_pics/<?=$this->data["profile_icon"];?>"/>
+              <img data-pin-nopin data-pin-nopin class="author-prof" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>profile_pics/<?=$this->data["profile_icon"];?>"/>
             </div>
             <div class="item-author-info">
               <p class="full-name"><?=$this->data["firstname"]." ".$this->data["lastname"];?></p>
@@ -925,7 +925,7 @@
     </div><div class="column-item-cont">
       <div class="column-item row-item">
         <div class="item-img-cover">
-          <img class="article-item-cover" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>blog/article-<?=$this->data['ID'];?>/<?=$this->data["cover-photo"];?>"/>
+          <img data-pin-nopin class="article-item-cover" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>blog/article-<?=$this->data['ID'];?>/<?=$this->data["cover-photo"];?>"/>
         </div>
         <div class="item-body">
           <div class="article-item-title">
@@ -936,7 +936,7 @@
           <span class="body-separator"></span>
           <div class="article-item-author">
             <div class="item-author-profile-pic">
-              <img data-pin-nopin class="author-prof" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>profile_pics/<?=$this->data["profile_icon"];?>"/>
+              <img data-pin-nopin data-pin-nopin class="author-prof" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>profile_pics/<?=$this->data["profile_icon"];?>"/>
             </div>
             <div class="item-author-info">
               <p class="full-name"><?=$this->data["firstname"]." ".$this->data["lastname"];?></p>
@@ -949,7 +949,7 @@
     </div><div class="column-item-cont">
       <div class="column-item row-item">
         <div class="item-img-cover">
-          <img class="article-item-cover" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>blog/article-<?=$this->data['ID'];?>/<?=$this->data["cover-photo"];?>"/>
+          <img data-pin-nopin class="article-item-cover" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>blog/article-<?=$this->data['ID'];?>/<?=$this->data["cover-photo"];?>"/>
         </div>
         <div class="item-body">
           <div class="article-item-title">
@@ -960,7 +960,7 @@
           <span class="body-separator"></span>
           <div class="article-item-author">
             <div class="item-author-profile-pic">
-              <img data-pin-nopin class="author-prof" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>profile_pics/<?=$this->data["profile_icon"];?>"/>
+              <img data-pin-nopin data-pin-nopin class="author-prof" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>profile_pics/<?=$this->data["profile_icon"];?>"/>
             </div>
             <div class="item-author-info">
               <p class="full-name"><?=$this->data["firstname"]." ".$this->data["lastname"];?></p>
@@ -973,7 +973,7 @@
     </div><div class="column-item-cont">
       <div class="column-item row-item">
         <div class="item-img-cover">
-          <img class="article-item-cover" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>blog/article-<?=$this->data['ID'];?>/<?=$this->data["cover-photo"];?>"/>
+          <img data-pin-nopin class="article-item-cover" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>blog/article-<?=$this->data['ID'];?>/<?=$this->data["cover-photo"];?>"/>
         </div>
         <div class="item-body">
           <div class="article-item-title">
@@ -984,7 +984,7 @@
           <span class="body-separator"></span>
           <div class="article-item-author">
             <div class="item-author-profile-pic">
-              <img data-pin-nopin class="author-prof" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>profile_pics/<?=$this->data["profile_icon"];?>"/>
+              <img data-pin-nopin data-pin-nopin class="author-prof" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>profile_pics/<?=$this->data["profile_icon"];?>"/>
             </div>
             <div class="item-author-info">
               <p class="full-name"><?=$this->data["firstname"]." ".$this->data["lastname"];?></p>
@@ -997,7 +997,7 @@
     </div><div class="column-item-cont">
       <div class="column-item row-item">
         <div class="item-img-cover">
-          <img class="article-item-cover" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>blog/article-<?=$this->data['ID'];?>/<?=$this->data["cover-photo"];?>"/>
+          <img data-pin-nopin class="article-item-cover" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>blog/article-<?=$this->data['ID'];?>/<?=$this->data["cover-photo"];?>"/>
         </div>
         <div class="item-body">
           <div class="article-item-title">
@@ -1008,7 +1008,7 @@
           <span class="body-separator"></span>
           <div class="article-item-author">
             <div class="item-author-profile-pic">
-              <img data-pin-nopin class="author-prof" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>profile_pics/<?=$this->data["profile_icon"];?>"/>
+              <img data-pin-nopin data-pin-nopin class="author-prof" src="<?=BASE_DIR.MEDIA_STORAGE_URL?>profile_pics/<?=$this->data["profile_icon"];?>"/>
             </div>
             <div class="item-author-info">
               <p class="full-name"><?=$this->data["firstname"]." ".$this->data["lastname"];?></p>

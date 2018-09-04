@@ -1006,6 +1006,22 @@ user-drag: none;
   display: table-cell;
   width: 100%;
   margin: 0px;
+  position: relative;
+}
+
+.comments .root-comment-cont .comment-table{
+  display: table;
+  width: 100%;
+  min-height: 7rem;
+}
+
+.comments .root-comment-cont .comment-table > *{
+  display: table-row;
+  height: 0;
+}
+
+.comments .root-comment-cont .comment-table .comment-row:nth-child(2){
+  height: auto;
 }
 
 .comments .comment-post-head .comment-post-info{
@@ -1200,8 +1216,8 @@ user-drag: none;
 
 .comments .comments-list .vote-report{
 	display: table;
-	float: right;
 	box-sizing: border-box;
+  float: right;
 }
 
 .comments .comments-list .vote-report span{

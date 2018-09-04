@@ -361,69 +361,77 @@ class Blog_model extends Model
                     </div>
                   </div>
                   <div class="root-comment-cont">
-                    <div class="comment-wrapper reply-list-wrapper">
-                      <div class="comment-post-head">
-                        <div class="comment-post-info">
-                          <div class="comment-user-info">
-                            <div class="comment-author">
-                              <div class="comment-user-wrote">
-                                <a href="'.BASE_DIR.'user/id/'.$authorID.'" "="">'.$author_username.'</a> '.ucfirst($display_role).'
-                                '.$reply_or_root;
+                    <div class="comment-table">
+                      <div class="comment-row">
+                        <div class="comment-wrapper reply-list-wrapper">
+                          <div class="comment-post-head">
+                            <div class="comment-post-info">
+                              <div class="comment-user-info">
+                                <div class="comment-author">
+                                  <div class="comment-user-wrote">
+                                    <a href="'.BASE_DIR.'user/id/'.$authorID.'" "="">'.$author_username.'</a> '.ucfirst($display_role).'
+                                    '.$reply_or_root;
 
     if ($comment_info['edited'] == 1){
       $commentHTML .= '<p class="edited-label">(edited)</p>';
     }
-      $commentHTML .= ':      </div>
-                              <div class="posted-date-wrapper">
-                                <div class="posted-date-img"></div>
-                                <span class="date">'.$published_date." ".'</span>
+      $commentHTML .= ':          </div>
+                                  <div class="posted-date-wrapper">
+                                    <div class="posted-date-img"></div>
+                                    <span class="date">'.$published_date." ".'</span>
+                                  </div>
+                                </div><!-- member type can be: admin, moderator, editor, or just member -->
                               </div>
-                            </div><!-- member type can be: admin, moderator, editor, or just member -->
+                            </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="comment comment-post-body">
-                      <p class="comment-output" id="comment-post-manage-2">'.$comment.'</p>
-                    </div>
-                    <div class="options comment-options comment-post-foot">
-                      <div class="vote-report">';
+                      <div class="comment-row">
+                        <div class="comment comment-post-body">
+                          <p class="comment-output" id="comment-post-manage-2">'.$comment.'</p>
+                        </div>
+                      </div>
+                      <div class="comment-row">
+                        <div class="options comment-options comment-post-foot">
+                          <div class="vote-report">';
     if (Session::user_data("ID") == $authorID){
-      $commentHTML .= '<span class="edit-btn-wrap">
-                        <button class="comment-edit-btn action__button" data-comment-id="'.$comment_ID.'">
-                          Edit
-                        </button>
-                      </span>
-                      <span class="delete-btn-wrap">
-                        <button class="comment-delete-btn action__button" data-comment-id="'.$comment_ID.'">
-                          Delete
-                        </button>
-                      </span>';
+      $commentHTML .= '     <span class="edit-btn-wrap">
+                            <button class="comment-edit-btn action__button" data-comment-id="'.$comment_ID.'">
+                              Edit
+                            </button>
+                          </span>
+                          <span class="delete-btn-wrap">
+                            <button class="comment-delete-btn action__button" data-comment-id="'.$comment_ID.'">
+                              Delete
+                            </button>
+                          </span>';
     }
     if (Session::get("loggedin")){
-      $commentHTML .= '<span class="reply-btn-wrap">
-                          <button class="reply-btn action__button" data-comment-id="'.$comment_ID.'">
-                            Reply
-                          </button>
-                        </span>';
+      $commentHTML .= '     <span class="reply-btn-wrap">
+                              <button class="reply-btn action__button" data-comment-id="'.$comment_ID.'">
+                                Reply
+                              </button>
+                            </span>';
     }
-    $commentHTML .= ' <span class="vote-up">
-                        <button class="vote-up-btn" data-comment-id="'.$comment_ID.'">
-                          <img data-pin-nopin class="vote-up-img" src="'.BASE_DIR.MEDIA_STORAGE_URL.$vote_up_img.'.png">
-                        </button>
-                        <p class="total-up-votes">'.$likes.'</p>
-                      </span>
-                      <span class="vote-down">
-                        <button class="vote-down-btn" data-comment-id="'.$comment_ID.'">
-                          <img data-pin-nopin class="vote-down-img" src="'.BASE_DIR.MEDIA_STORAGE_URL.$vote_down_img.'.png">
-                        </button>
-                        <p class="total-down-votes">'.$dislikes.'</p>
-                      </span>
-                      <span class="report">
-                        <button class="report-btn" data-comment-id="'.$comment_ID.'">
-                          <img title="Report" data-pin-nopin class="vote-down-img" src="'.BASE_DIR.MEDIA_STORAGE_URL.'report-flag.png">
-                        </button>
-                      </span>
+    $commentHTML .= '     <span class="vote-up">
+                            <button class="vote-up-btn" data-comment-id="'.$comment_ID.'">
+                              <img data-pin-nopin class="vote-up-img" src="'.BASE_DIR.MEDIA_STORAGE_URL.$vote_up_img.'.png">
+                            </button>
+                            <p class="total-up-votes">'.$likes.'</p>
+                          </span>
+                          <span class="vote-down">
+                            <button class="vote-down-btn" data-comment-id="'.$comment_ID.'">
+                              <img data-pin-nopin class="vote-down-img" src="'.BASE_DIR.MEDIA_STORAGE_URL.$vote_down_img.'.png">
+                            </button>
+                            <p class="total-down-votes">'.$dislikes.'</p>
+                          </span>
+                          <span class="report">
+                            <button class="report-btn" data-comment-id="'.$comment_ID.'">
+                              <img title="Report" data-pin-nopin class="vote-down-img" src="'.BASE_DIR.MEDIA_STORAGE_URL.'report-flag.png">
+                            </button>
+                          </span>
+                        </div>
+                      </div>
                     </div>
                   </div></div></div>';
     if (Session::get("loggedin")){
